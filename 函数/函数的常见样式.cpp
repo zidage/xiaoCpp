@@ -1,25 +1,25 @@
 #include <iostream>
 using namespace std;
 
-//╨╞йЩ╣дЁё╪ШяЫй╫
-//1,нч╡ннч╥╣
+//Е┤╫Ф∙╟Г └Е╦╦Х╖│Ф═╥Е╪▐
+//1,Ф≈═Е▐┌Ф≈═Х©■
 void test01()
 {
 	cout << "this is test01" << endl;
 }
 
-//2,сп╡ннч╥╣
+//2,Ф°┴Е▐┌Ф≈═Х©■
 void test02(int a)
 {
 	cout << "this is test02 a=" << a << endl;
 }
-//3,нч╡нсп╥╣
+//3,Ф≈═Е▐┌Ф°┴Х©■
 int test03()
 {
 	cout << "this is test 03" << endl;
 	return 1000;
 }
-//4,сп╡нсп╥╣
+//4,Ф°┴Е▐┌Ф°┴Х©■
 int test04(int a)
 {
 	cout << "this is test04 a = " << a << endl;
@@ -27,17 +27,17 @@ int test04(int a)
 }
 
 int main() {
-	//нч╡ннч╥╣╨╞йЩ╣Всц
+	//Ф≈═Е▐┌Ф≈═Х©■Е┤╫Ф∙╟Х╟┐Г■╗
 	test01();
 
-	//сп╡ннч╥╣╨╞йЩ╣Всц
+	//Ф°┴Е▐┌Ф≈═Х©■Е┤╫Ф∙╟Х╟┐Г■╗
 	test02(100);
 
-	//нч╡нсп╥╣╣д╨╞йЩ╣Всц
+	//Ф≈═Е▐┌Ф°┴Х©■Г └Е┤╫Ф∙╟Х╟┐Г■╗
 	int num1 = test03();
 	cout << "num1 = " << num1 << endl;
 
-	//сп╡нсп╥╣╣д╨╞йЩ╣Всц
+	//Ф°┴Е▐┌Ф°┴Х©■Г └Е┤╫Ф∙╟Х╟┐Г■╗
 	int num2 = test04(100000);
 	cout << "num2 = " << num2 << endl;
 

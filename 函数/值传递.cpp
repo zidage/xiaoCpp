@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-//Öµ´«µÝ
-//¶¨Òåº¯Êý,ÊµÏÖÁ½¸öÊý×Ö½øÐÐ½»»»µÄº¯Êý
+//å€¼ä¼ é€’
+//å®šä¹‰å‡½æ•°,å®žçŽ°ä¸¤ä¸ªæ•°å­—è¿›è¡Œäº¤æ¢çš„å‡½æ•°
 
-//Èç¹ûÒ»¸öº¯Êý²»ÐèÒª·µ»ØÖµ,ÉùÃ÷µÄÊ±ºò¿ÉÒÔÐ´void
+//å¦‚æžœä¸€ä¸ªå‡½æ•°ä¸éœ€è¦è¿”å›žå€¼,å£°æ˜Žçš„æ—¶å€™å¯ä»¥å†™void
 void swap(int num1, int num2)
 {
-	cout << "½»»»Ç°:" << endl;
+	cout << "äº¤æ¢å‰:" << endl;
 	cout << "num1:" << num1 << endl;
 	cout << "num2:" << num2 << endl;
 	
@@ -15,12 +15,12 @@ void swap(int num1, int num2)
 	num1 = num2;
 	num2 = temp;
 
-	cout << "½»»»ºó:" << endl;
+	cout << "äº¤æ¢åŽ:" << endl;
 	cout << "num1:" << num1 << endl;
 	cout << "num2:" << num2 << endl;
 
 	
-	//return;·µ»ØÖµ²»ÐèÒªÊ±,¿ÉÒÔ²»Ð´return
+	//return;è¿”å›žå€¼ä¸éœ€è¦æ—¶,å¯ä»¥ä¸å†™return
 }
 
 int main() {
@@ -30,7 +30,7 @@ int main() {
 	cout << "a=" << a << endl;
 	cout << "b=" << b << endl;
 
-	//µ±ÎÒÃÇ×öÖµ´«µÝÊ±,º¯ÊýµÄÐÎ²Î·¢Éú¸Ä±ä,²¢²»»áÓ°ÏìÊµ²Î
+	//å½“æˆ‘ä»¬åšå€¼ä¼ é€’æ—¶,å‡½æ•°çš„å½¢å‚å‘ç”Ÿæ”¹å˜,å¹¶ä¸ä¼šå½±å“å®žå‚
 
 	swap(a, b);
 

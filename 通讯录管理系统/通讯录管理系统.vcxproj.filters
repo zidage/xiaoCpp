@@ -18,5 +18,8 @@
     <ClCompile Include="通讯录管理系统.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="狗屁不通文章生成器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

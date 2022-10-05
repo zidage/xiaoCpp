@@ -4,10 +4,10 @@ using namespace std;
 int main()
 {
 	int arr[5] = { 1,3,2,5,4 };
-	//¼ÇÂ¼ÆğÊ¼ÏÂ±êµÄÎ»ÖÃ
-	int start = 0; //ÆğÊ¼ÔªËØÏÂ±ê
-	//¼ÇÂ¼½áÊøÏÂ±êµÄÎ»ÖÃ
-	int end = sizeof(arr) / sizeof(arr[0])-1; //Ä©Î²ÔªËØÏÂ±ê
+	//è®°å½•èµ·å§‹ä¸‹æ ‡çš„ä½ç½®
+	int start = 0; //èµ·å§‹å…ƒç´ ä¸‹æ ‡
+	//è®°å½•ç»“æŸä¸‹æ ‡çš„ä½ç½®
+	int end = sizeof(arr) / sizeof(arr[0]) - 1; //æœ«å°¾å…ƒç´ ä¸‹æ ‡
 
 	while (start<end)
 	{

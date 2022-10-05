@@ -1,6 +1,6 @@
 #include "swap.h"
 
-//º¯ÊýµÄ¶¨Òå
+//å‡½æ•°çš„å®šä¹‰
 void swap(int num1, int num2)
 {
 	int temp = num1;

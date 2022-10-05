@@ -25,27 +25,27 @@ void addContacts(Addressbook* abs)
 {
 	if (abs->contacts_size > 1000)
 	{
-		cout << "Í¨Ñ¶Â¼ÒÑÂú" << endl;
+		cout << "é€šè®¯å½•å·²æ»¡" << endl;
 	}
 	else
 	{
-		cout << "ÇëÊäÈëÐÕÃû:";
+		cout << "è¯·è¾“å…¥å§“å:";
 		cin >> abs->contactArray[abs->contacts_size].name;
 		
-		cout << "ÇëÊäÈëÐÔ±ð:";
+		cout << "è¯·è¾“å…¥æ€§åˆ«:";
 		cin >> abs->contactArray[abs->contacts_size].gender;
 
-		cout << "ÇëÊäÈëÄêÁä:";
+		cout << "è¯·è¾“å…¥å¹´é¾„:";
 		cin >> abs->contactArray[abs->contacts_size].age;
 
-		cout << "ÇëÊäÈëµç»°ºÅÂë:";
+		cout << "è¯·è¾“å…¥ç”µè¯å·ç :";
 		cin >> abs->contactArray[abs->contacts_size].phoneNumber;
 
-		cout << "ÇëÊäÈëµØÖ·:";
+		cout << "è¯·è¾“å…¥åœ°å€:";
 		cin >> abs->contactArray[abs->contacts_size].address;
 		
 		abs->contacts_size++;
-		cout << "Ìí¼Ó³É¹¦!" << endl;
+		cout << "æ·»åŠ æˆåŠŸ!" << endl;
 
 	}
 }
@@ -54,18 +54,18 @@ void showContacts(Addressbook* abs)
 {
 	if (abs->contacts_size == 0)
 	{
-		cout << "µ±Ç°¼ÇÂ¼Îª¿Õ" << endl;
+		cout << "å½“å‰è®°å½•ä¸ºç©º" << endl;
 	}
 	else
 	{
 		for (int i = 0; i < abs->contacts_size; i++)
 		{
-			cout << "ÁªÏµÈË" << i+1 << "\t"
-				<< " ÐÕÃû:" << abs->contactArray[i].name << "\t"
-				<< " ÐÔ±ð:" << abs->contactArray[i].gender << "\t"
-				<< " ÄêÁä:" << abs->contactArray[i].age << "\t"
-				<< " µç»°ºÅÂë:" << abs->contactArray[i].phoneNumber << "\t"<<"\t"
-				<< " µØÖ·:" << abs->contactArray[i].address << endl;
+			cout << "è”ç³»äºº" << i+1 << "\t"
+				<< " å§“å:" << abs->contactArray[i].name << "\t"
+				<< " æ€§åˆ«:" << abs->contactArray[i].gender << "\t"
+				<< " å¹´é¾„:" << abs->contactArray[i].age << "\t"
+				<< " ç”µè¯å·ç :" << abs->contactArray[i].phoneNumber << "\t"<<"\t"
+				<< " åœ°å€:" << abs->contactArray[i].address << endl;
 		}
 	}
 
@@ -90,18 +90,18 @@ void WannaEditList(Addressbook* abs)
 {
 	if (abs->contacts_size == 0)
 	{
-		cout << "µ±Ç°¼ÇÂ¼Îª¿Õ" << endl;
+		cout << "å½“å‰è®°å½•ä¸ºç©º" << endl;
 	}
 	else
 	{
 		for (int i = 0; i < abs->contacts_size; i++)
 		{
-			cout << "ÁªÏµÈË" << abs->contacts_size << "\t"
-				<< " ÐÕÃû:" << abs->contactArray[i].name << "\t"
-				<< " ÐÔ±ð:" << abs->contactArray[i].gender << "\t"
-				<< " ÄêÁä:" << abs->contactArray[i].age << "\t"
-				<< " µç»°ºÅÂë:" << abs->contactArray[i].phoneNumber << "\t" << "\t"
-				<< " µØÖ·:" << abs->contactArray[i].address << endl;
+			cout << "è”ç³»äºº" << abs->contacts_size << "\t"
+				<< " å§“å:" << abs->contactArray[i].name << "\t"
+				<< " æ€§åˆ«:" << abs->contactArray[i].gender << "\t"
+				<< " å¹´é¾„:" << abs->contactArray[i].age << "\t"
+				<< " ç”µè¯å·ç :" << abs->contactArray[i].phoneNumber << "\t" << "\t"
+				<< " åœ°å€:" << abs->contactArray[i].address << endl;
 		}
 	}
 
@@ -110,7 +110,7 @@ void WannaEditList(Addressbook* abs)
 void deleteContacts(Addressbook* abs)
 {
 	WannaEditList(abs);
-	cout << "ÇëÊäÈëÄúÏëÉ¾³ýµÄÁªÏµÈËµÄÐÕÃû:";
+	cout << "è¯·è¾“å…¥æ‚¨æƒ³åˆ é™¤çš„è”ç³»äººçš„å§“å:";
 
 	string name;
 	cin >> name;
@@ -118,15 +118,15 @@ void deleteContacts(Addressbook* abs)
 	int id = isExist(abs, name);
 	if (id == -1)
 	{
-		cout << "¸ÃÁªÏµÈË²»´æÔÚ!\n";
+		cout << "è¯¥è”ç³»äººä¸å­˜åœ¨!\n";
 	}
 	else
 	{
-		for (int i = id; i < abs->contacts_size; i++) //´ÓÉ¾³ýµÄÄÇÒ»Ïî¿ªÊ¼±éÀúÊý×é,½«ºóÒ»Î»ÁªÏµÈË¸²¸Çµ½Ç°Ò»Î»µÄÎ»ÖÃÉÏ
+		for (int i = id; i < abs->contacts_size; i++) //ä»Žåˆ é™¤çš„é‚£ä¸€é¡¹å¼€å§‹éåŽ†æ•°ç»„,å°†åŽä¸€ä½è”ç³»äººè¦†ç›–åˆ°å‰ä¸€ä½çš„ä½ç½®ä¸Š
 		{
 			abs->contactArray[i] = abs->contactArray[i + 1];
 			abs->contacts_size--;
-			cout << "É¾³ý³É¹¦!\n";
+			cout << "åˆ é™¤æˆåŠŸ!\n";
 		}
 	}
 
@@ -136,22 +136,22 @@ void deleteContacts(Addressbook* abs)
 
 void findContacts(Addressbook* abs)
 {
-	cout << "ÇëÊäÈëÏëÒª²éÑ¯µÄÁªÏµÈËÃû:\n";
+	cout << "è¯·è¾“å…¥æƒ³è¦æŸ¥è¯¢çš„è”ç³»äººå:\n";
 	string name;
 	cin >> name;
 	for (int i = 0; i < abs->contacts_size; i++)
 	{
 		if (abs->contactArray[i].name == name)
 		{			 
-			cout << " ÐÕÃû:" << abs->contactArray[i].name << "\t"
-				<< " ÐÔ±ð:" << abs->contactArray[i].gender << "\t"
-				<< " ÄêÁä:" << abs->contactArray[i].age << "\t"
-				<< " µç»°ºÅÂë:" << abs->contactArray[i].phoneNumber << "\t" << "\t"
-				<< " µØÖ·:" << abs->contactArray[i].address << endl;
+			cout << " å§“å:" << abs->contactArray[i].name << "\t"
+				<< " æ€§åˆ«:" << abs->contactArray[i].gender << "\t"
+				<< " å¹´é¾„:" << abs->contactArray[i].age << "\t"
+				<< " ç”µè¯å·ç :" << abs->contactArray[i].phoneNumber << "\t" << "\t"
+				<< " åœ°å€:" << abs->contactArray[i].address << endl;
 		}
 		else if (i == abs->contacts_size && abs->contactArray[i].name != name)
 		{
-			cout << "¸ÃÁªÏµÈË²»´æÔÚ!\n";
+			cout << "è¯¥è”ç³»äººä¸å­˜åœ¨!\n";
 		}
 	}
 	system("pause");
@@ -160,7 +160,7 @@ void findContacts(Addressbook* abs)
 
 void editContacts(Addressbook* abs)
 {
-	cout << "ÇëÊäÈëÏëÒªÐÞ¸ÄµÄÁªÏµÈËÃû:\n";
+	cout << "è¯·è¾“å…¥æƒ³è¦ä¿®æ”¹çš„è”ç³»äººå:\n";
 	WannaEditList(abs);
 
 	string name;
@@ -173,41 +173,41 @@ void editContacts(Addressbook* abs)
 			int select = 0;
 			while (select == 0)
 			{
-				cout << "ÇëÊäÈëÏëÒªÐÞ¸ÄµÄÏîÄ¿\n" << "1 ÐÕÃû\t2 ÐÔ±ð\t3 ÄêÁä\t4 µç»°ºÅÂë  5 µØÖ·\tÍË³öÇë°´0\n";
+				cout << "è¯·è¾“å…¥æƒ³è¦ä¿®æ”¹çš„é¡¹ç›®\n" << "1 å§“å\t2 æ€§åˆ«\t3 å¹´é¾„\t4 ç”µè¯å·ç   5 åœ°å€\té€€å‡ºè¯·æŒ‰0\n";
 				int option;
 				cin >> option;
 				switch (option)
 				{
 				case 1:
-					cout << "ÇëÊäÈëÐÞ¸ÄºóÐÕÃû:\n";
+					cout << "è¯·è¾“å…¥ä¿®æ”¹åŽå§“å:\n";
 					cin >> abs->contactArray[i].name;
-					cout << "ÐÞ¸Ä³É¹¦!\n";
+					cout << "ä¿®æ”¹æˆåŠŸ!\n";
 					break;
 				case 2:
-					cout << "ÇëÊäÈëÐÞ¸ÄºóÐÔ±ð:\n";
+					cout << "è¯·è¾“å…¥ä¿®æ”¹åŽæ€§åˆ«:\n";
 					cin >> abs->contactArray[i].gender;
-					cout << "ÐÞ¸Ä³É¹¦!\n";
+					cout << "ä¿®æ”¹æˆåŠŸ!\n";
 					break;
 				case 3:
-					cout << "ÇëÊäÈëÐÞ¸ÄºóÄêÁä:\n";
+					cout << "è¯·è¾“å…¥ä¿®æ”¹åŽå¹´é¾„:\n";
 					cin >> abs->contactArray[i].age;
-					cout << "ÐÞ¸Ä³É¹¦!\n";
+					cout << "ä¿®æ”¹æˆåŠŸ!\n";
 					break;
 				case 4:
-					cout << "ÇëÊäÈëÐÞ¸Äºóµç»°ºÅÂë:\n";
+					cout << "è¯·è¾“å…¥ä¿®æ”¹åŽç”µè¯å·ç :\n";
 					cin >> abs->contactArray[i].name;
-					cout << "ÐÞ¸Ä³É¹¦!\n";
+					cout << "ä¿®æ”¹æˆåŠŸ!\n";
 					break;
 				case 5:
-					cout << "ÇëÊäÈëÐÞ¸ÄºóµØÖ·:\n";
+					cout << "è¯·è¾“å…¥ä¿®æ”¹åŽåœ°å€:\n";
 					cin >> abs->contactArray[i].name;
-					cout << "ÐÞ¸Ä³É¹¦!\n";
+					cout << "ä¿®æ”¹æˆåŠŸ!\n";
 					break;
 				case 0:
 					select = 1;
 					break;
 				default:
-					cout << "ÇëÊäÈëÕýÈ·µÄÑ¡Ïî!\n";
+					cout << "è¯·è¾“å…¥æ­£ç¡®çš„é€‰é¡¹!\n";
 					break;
 				}
 
@@ -217,7 +217,7 @@ void editContacts(Addressbook* abs)
 
 		else if (i == abs->contacts_size && abs->contactArray[i].name != name)
 		{
-			cout << "¸ÃÁªÏµÈË²»´æÔÚ!\n";
+			cout << "è¯¥è”ç³»äººä¸å­˜åœ¨!\n";
 		}
 
 	}
@@ -228,13 +228,13 @@ void editContacts(Addressbook* abs)
 
 void wipeOut(Addressbook* abs)
 {
-	cout << "ÊÇ·ñÇå¿Õ?(ÊÇ/·ñ)\n";
+	cout << "æ˜¯å¦æ¸…ç©º?(æ˜¯/å¦)\n";
 	string option;
 	cin >> option;
-	if (option == "ÊÇ")
+	if (option == "æ˜¯")
 	{
 		abs->contacts_size = 0;
-		cout << "ÒÑÇå¿ÕÁªÏµÈË!\n";
+		cout << "å·²æ¸…ç©ºè”ç³»äºº!\n";
 		system("pause");
 		system("cls");
 	}
@@ -249,19 +249,19 @@ void wipeOut(Addressbook* abs)
 void showMenu()
 {
 	cout << "***************************" << endl;
-	cout << "*****  1¡¢Ìí¼ÓÁªÏµÈË  *****" << endl;
-	cout << "*****  2¡¢ÏÔÊ¾ÁªÏµÈË  *****" << endl;
-	cout << "*****  3¡¢É¾³ýÁªÏµÈË  *****" << endl;
-	cout << "*****  4¡¢²éÕÒÁªÏµÈË  *****" << endl;
-	cout << "*****  5¡¢ÐÞ¸ÄÁªÏµÈË  *****" << endl;
-	cout << "*****  6¡¢Çå¿ÕÁªÏµÈË  *****" << endl;
-	cout << "*****  0¡¢ÍË³öÍ¨Ñ¶Â¼  *****" << endl;
+	cout << "*****  1ã€æ·»åŠ è”ç³»äºº  *****" << endl;
+	cout << "*****  2ã€æ˜¾ç¤ºè”ç³»äºº  *****" << endl;
+	cout << "*****  3ã€åˆ é™¤è”ç³»äºº  *****" << endl;
+	cout << "*****  4ã€æŸ¥æ‰¾è”ç³»äºº  *****" << endl;
+	cout << "*****  5ã€ä¿®æ”¹è”ç³»äºº  *****" << endl;
+	cout << "*****  6ã€æ¸…ç©ºè”ç³»äºº  *****" << endl;
+	cout << "*****  0ã€é€€å‡ºé€šè®¯å½•  *****" << endl;
 	cout << "***************************" << endl;
 }
 
 int main()
 {
-	//´´½¨Í¨Ñ¶Â¼½á¹¹Ìå±äÁ¿
+	//åˆ›å»ºé€šè®¯å½•ç»“æž„ä½“å˜é‡
 	Addressbook abs;
 	abs.contacts_size = 0;
 
@@ -294,12 +294,12 @@ int main()
 			wipeOut(&abs);
 			break;
 		case 0:
-			cout << "»¶Ó­ÏÂ´ÎÊ¹ÓÃ" << endl;
+			cout << "æ¬¢è¿Žä¸‹æ¬¡ä½¿ç”¨" << endl;
 			system("pause");
 			return 0;
 			break;
 		default:
-			cout << "ÇëÊäÈëÕýÈ·µÄÊý×Ö" << endl;
+			cout << "è¯·è¾“å…¥æ­£ç¡®çš„æ•°å­—" << endl;
 		}
 	}
 

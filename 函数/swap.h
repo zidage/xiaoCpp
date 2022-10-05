@@ -1,5 +1,5 @@
 #include <iostream>
 using namespace std;
 
-//º¯ÊıµÄÉùÃ÷
+//å‡½æ•°çš„å£°æ˜
 void swap(int num1, int num2);

@@ -39,5 +39,8 @@
     <ClCompile Include="指针,数组,函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\程序的内存模型\pointer practice.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
