@@ -15,31 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="打印田字格.cpp">
+    <ClCompile Include="02函数的分类及其调用.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="7-24 实验3_7_数字拆分.cpp">
+    <ClCompile Include="03拷贝构造函数的调用时机.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="7-25 实验3_8_位数对调.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="7-26 实验3_9_符合要求的数字.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="7-35 实验4_5_求幂值.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="源.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="小黄追击小绿.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="7-42 实验7_7_连续子序列.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="源1.cpp">
+    <ClCompile Include="04构造函数的调用规则.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
