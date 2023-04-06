@@ -31,7 +31,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C Primer Plus", "C Primer P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表", "链表\链表.vcxproj", "{C740EDEA-6953-4666-94B3-02CEDEA7B9AC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类和对象-对象特性-函数的分类以及调用", "类和对象-对象特性-函数的分类以及调用\类和对象-对象特性-函数的分类以及调用.vcxproj", "{DFEBFAA9-29D8-4CFB-843E-2E114C48CC33}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类和对象-对象特性-对象的初始化和清理", "类和对象-对象特性-函数的分类以及调用\类和对象-对象特性-函数的分类以及调用.vcxproj", "{DFEBFAA9-29D8-4CFB-843E-2E114C48CC33}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C++对象模型和this指针", "C++对象模型和this指针\C++对象模型和this指针.vcxproj", "{A37B944E-7EE3-4F7D-9839-A87428B158E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -161,6 +163,14 @@ Global
 		{DFEBFAA9-29D8-4CFB-843E-2E114C48CC33}.Release|x64.Build.0 = Release|x64
 		{DFEBFAA9-29D8-4CFB-843E-2E114C48CC33}.Release|x86.ActiveCfg = Release|Win32
 		{DFEBFAA9-29D8-4CFB-843E-2E114C48CC33}.Release|x86.Build.0 = Release|Win32
+		{A37B944E-7EE3-4F7D-9839-A87428B158E4}.Debug|x64.ActiveCfg = Debug|x64
+		{A37B944E-7EE3-4F7D-9839-A87428B158E4}.Debug|x64.Build.0 = Debug|x64
+		{A37B944E-7EE3-4F7D-9839-A87428B158E4}.Debug|x86.ActiveCfg = Debug|Win32
+		{A37B944E-7EE3-4F7D-9839-A87428B158E4}.Debug|x86.Build.0 = Debug|Win32
+		{A37B944E-7EE3-4F7D-9839-A87428B158E4}.Release|x64.ActiveCfg = Release|x64
+		{A37B944E-7EE3-4F7D-9839-A87428B158E4}.Release|x64.Build.0 = Release|x64
+		{A37B944E-7EE3-4F7D-9839-A87428B158E4}.Release|x86.ActiveCfg = Release|Win32
+		{A37B944E-7EE3-4F7D-9839-A87428B158E4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

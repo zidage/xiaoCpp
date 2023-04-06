@@ -15,28 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="02函数的分类及其调用.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="03拷贝构造函数的调用时机.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="04构造函数的调用规则.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="05深拷贝与浅拷贝.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="06初始化列表.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="07类对象作为类成员.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="08静态成员变量.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="08静态成员函数.cpp">
+    <ClCompile Include="01成员变量和成员函数分开存储.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
